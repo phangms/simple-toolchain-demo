@@ -13,7 +13,7 @@ describe('root', function() {
 });
 
 it('should say hello world', function() {
-	chai.request(http://localhost:6001).get('/').end(function(err, res) {
+	chai.request('http://localhost:6001').get('/').end(function(err, res) {
 		expect(res).to.have.status(200);
 	});
 });
