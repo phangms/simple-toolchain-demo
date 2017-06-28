@@ -3,7 +3,8 @@
 	"version": "0.0.1",
     "private": true,
 	"scripts": {
-		"start": "node app.js"
+		"start": "node app.js",
+		"test": "mocha --timeout 10000"
 	},
 	"dependencies": {
 		"express": "4.13.x",
@@ -12,5 +13,12 @@
 	"repository": {},
 	"engines": {
 		"node": "4.2.x"
-	} 
+	},
+  "devDependencies": {
+    "body-parser": "^1.0.1",
+    "chai": "~3.5.0",
+    "chai-http": "~2.0.1",
+    "express": "^4.0.0",
+    "mocha": "~2.5.3"
+  } 
 }
