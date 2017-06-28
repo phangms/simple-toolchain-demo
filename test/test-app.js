@@ -13,7 +13,7 @@ describe('root', function() {
 });
 
 it('should say hello world', function() {
-	chai.request('https://simple-toolchain-demo.stage1.mybluemix.net/').get('/').end(function(err, res) {
-		expect(res).to.have.status(400);
+	chai.request(server).get('/').end(function(err, res) {
+		expect(res).to.have.status(200);
 	});
 });
